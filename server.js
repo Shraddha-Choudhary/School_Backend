@@ -17,7 +17,7 @@ dotenv.config();
 app.use(
   cors({
     origin:
-      process.env.CLIENT_URL || "https://webschoolmanagement.netlify.app",
+      process.env.CLIENT_URL || "https://effervescent-cucurucho-e60683.netlify.app",
   })
 );
 app.use(express.json());
