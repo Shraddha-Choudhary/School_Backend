@@ -18,7 +18,8 @@ app.use(
   cors({
     origin:
       process.env.CLIENT_URL ||
-      "https://school-web-management.netlify.app",
+     
+     "https://school-web-management.netlify.app"
   })
 );
 app.use(express.json());
