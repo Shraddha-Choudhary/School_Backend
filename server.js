@@ -16,10 +16,15 @@ dotenv.config();
   // app.use(cors({origin:"http://localhost:3000"}));
 app.use(
   cors({
-    origin:
-      process.env.CLIENT_URL ||
-     
-     "https://school-web-management.netlify.app"
+    // origin:
+    //   process.env.CLIENT_URL ||
+
+    //  "https://school-web-management.netlify.app"
+
+    origin: [
+      "http://localhost:5173",
+      "https://school-web-management.netlify.app",
+    ],
   })
 );
 app.use(express.json());
